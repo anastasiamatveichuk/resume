@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+img {
+    box-sizing: border-box;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border: 20px;
+    border-radius: 20px;
+    margin: 20px 0 0 20px;
+}
+body {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 15px;
+    max-width: 700px;
+    height: 1380px;
+    margin: auto;
+    box-sizing: content-box;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+#header {
+    text-align: center;
+    margin: auto;
+    float: right;
+    width: 48%;
+    color: rgb(255, 57, 146);
+    margin: 20px 0 0px 0;
+    box-sizing: border-box;
+    padding-right: 90px;
+}
+#footer {
+    box-sizing: border-box;
+    text-align: center;
+    float: right;
+    width: 48%;
+    color: rgb(255, 57, 146);
+    margin: -30px 0 50px 0;
+    padding-right: 90px;
+}
+#CV {
+    border-top: 2px solid rgb(241, 154, 193);
+    padding-top: 28px;
+    color: #bbb;
+}
+.info {
+    padding: 25px;
+    padding-top: 65px;
+    float: left;
+    width: 55%;
+  }
+aside {
+    border-radius: 10px;
+    background-color: #ddd;
+    float: right;
+    width: 33%;
+    margin-right: 25px;
+    padding-right: 35px;
+    padding-left: 28px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 14px rgba(255, 0, 183, 0.35);
+  }
+aside li {
+    padding-bottom: 10px;
+    list-style-position: outside;
+    list-style-image: url('icons8-take-it-easy-50-4.png');
+}
+#work {
+    text-align: center;
+    float: left;
+    width: 90%;
+    padding-left: 46px;
+    padding-top: 30px;
+}
+table {
+    text-align: center;
+    display: block;
+    margin: 10px 30px;
+    padding: 0 0 10px 80px; 
+}
+.table th {
+    padding-bottom: 10px;
+}
+.table td {
+    padding-top: 10px;
+} 
+#h3 {
+    text-align: center;
+    color: rgb(255, 57, 146);
+  }
+a {
+    color: rgb(255, 57, 146);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+}
+a:visited {
+    color: rgb(148, 148, 148);
+} 
+button {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ddd;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-family: inherit;
+    background: linear-gradient(rgb(255, 142, 193), rgb(252, 34, 190))rgb(252, 34, 190);
+}
+button:hover  {
+    background: linear-gradient(rgb(252, 34, 190), rgb(255, 142, 193))rgb(255, 142, 193); 
+    color: #fff;
+}
+form {
+    color: rgb(255, 57, 146);
+} 
+#connect {
+    text-align: center;
+}
+.row input, .row textarea {
+    padding: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(255, 0, 183, 0.35);
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.row label {
+    padding: 8px;
+    display: block;
+}
+.onerow {
+    margin-bottom: 10px;
+    display: flex;
+}
+.onerow .row{
+    width: 50%;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+.onerow .row:last-child{
+    margin-right: 0px;
+}
+@media (max-width: 700px) {
+    body {
+        height: 1420px;
+    }
+    #header {
+        text-align: center;
+        margin: 40px 0 0 0;
+        padding-right: 10px;
+    }
+    #footer {
+        float: right;
+        width: 49%;
+        padding-right: 0px;
+    }
+    .info {
+        padding: 20px;
+        padding-top: 88px;
+        float: left;
+        width: 55%;
+      }
+      table {
+        padding: 0; 
+        width: 90%;
+    }
+    #work {
+        padding-left: 28px;
+    }
+}
