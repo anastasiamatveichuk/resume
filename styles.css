@@ -152,6 +152,7 @@ form {
         box-shadow: 4px 4px 14px rgba(0, 0, 0, 0);
     }
     .img {
+        width: auto;
         text-align: center;
     }
     .file #header {
