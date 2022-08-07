@@ -175,12 +175,12 @@ form {
         width: 93%;
       }
     .file .aside {
-        font-size: auto;
+        font-size: 16px;
         position: static;
         height: 295px;
         border-radius: 10px;
         background-color: #ddd;
-        width: 40%;
+        width: 45%;
         margin: auto;
         padding-top: 1px;
         padding-right: 0px;
