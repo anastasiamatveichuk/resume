@@ -43,12 +43,10 @@ img {
 }
 .inf {
     position: relative;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 .file .info {
-    padding: 25px;
-    padding-left: 40px;
-    padding-top: 55px;
+    padding: 0px 25px 25px 40px;
     width: 45%;
   }
 .file .aside {
@@ -178,7 +176,7 @@ form {
     .file .aside {
         font-size: 16px;
         position: static;
-        height: 295px;
+        height: 240px;
         border-radius: 10px;
         background-color: #ddd;
         width: 45%;
