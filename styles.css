@@ -175,6 +175,7 @@ form {
         width: 93%;
       }
     .file .aside {
+        width: auto;
         position: static;
         height: 295px;
         border-radius: 10px;
