@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
 img {
+    width: 240px;
     box-sizing: border-box;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-    border: 20px;
     border-radius: 20px;
-    margin: 20px 0 0 20px;
+    margin: 10px 0 0 20px;
 }
-body {
+.img {
+    position: relative;
+}
+.file {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 18px;
     font-weight: normal;
@@ -14,65 +17,65 @@ body {
     max-width: 700px;
     height: 1380px;
     margin: auto;
-    box-sizing: content-box;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
-#header {
-    text-align: center;
+.file #header {
     margin: auto;
-    float: right;
-    width: 48%;
-    color: rgb(255, 57, 146);
-    margin: 20px 0 0px 0;
-    box-sizing: border-box;
-    padding-right: 90px;
-}
-#footer {
-    box-sizing: border-box;
+    max-width: 350px;
+    width:45%;
     text-align: center;
-    float: right;
-    width: 48%;
     color: rgb(255, 57, 146);
-    margin: -30px 0 50px 0;
-    padding-right: 90px;
+    position: absolute;
+    top: 53px;
+    left: 330px;
+}
+.file #footer {
+    position: absolute;
+    box-sizing: border-box;
+    color: rgb(255, 57, 146);
+    top: 352px;
+    left: 367px;
 }
 #CV {
     border-top: 2px solid rgb(241, 154, 193);
     padding-top: 28px;
     color: #bbb;
 }
-.info {
+.inf {
+    position: relative;
+    margin-top: 60px;
+}
+.file .info {
     padding: 25px;
-    padding-top: 65px;
-    float: left;
-    width: 55%;
+    padding-left: 40px;
+    padding-top: 55px;
+    width: 45%;
   }
-aside {
+.file .aside {
+    position: absolute;
     border-radius: 10px;
     background-color: #ddd;
-    float: right;
     width: 33%;
-    margin-right: 25px;
-    padding-right: 35px;
-    padding-left: 28px;
-    box-sizing: border-box;
+    top: 0px;
+    left: 388px;
+    box-sizing: border-box; 
     box-shadow: 8px 8px 14px rgba(255, 0, 183, 0.35);
   }
-aside li {
+.aside li {
     padding-bottom: 10px;
     list-style-position: outside;
     list-style-image: url('icons8-take-it-easy-50-4.png');
 }
-#work {
+.section #work {
     text-align: center;
-    float: left;
-    width: 90%;
     padding-left: 46px;
     padding-top: 30px;
 }
-table {
+.file .section {
     text-align: center;
-    display: block;
+}
+.file .table {
+    text-align: center;
     margin: 10px 30px;
     padding: 0 0 10px 80px; 
 }
@@ -145,30 +148,53 @@ form {
     margin-right: 0px;
 }
 @media (max-width: 700px) {
-    body {
-        height: 1420px;
+    .file {
+        box-shadow: 4px 4px 14px rgba(0, 0, 0, 0);
     }
-    #header {
+    .img {
         text-align: center;
-        margin: 40px 0 0 0;
-        padding-right: 10px;
     }
-    #footer {
-        float: right;
-        width: 49%;
-        padding-right: 0px;
+    .file #header {
+        position: static;
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        width: 80%;
     }
-    .info {
+    .file #footer {
+        position: absolute;
+        writing-mode: vertical-rl;
+        left: 20px;
+        top: 80px;
+    }
+    .file .info {
+        text-align: center;
         padding: 20px;
-        padding-top: 88px;
-        float: left;
-        width: 55%;
+        padding-top: 0px;
+        width: 93%;
       }
-      table {
-        padding: 0; 
-        width: 90%;
+    .file .aside {
+        position: static;
+        height: 295px;
+        border-radius: 10px;
+        background-color: #ddd;
+        width: 40%;
+        margin: auto;
+        padding-top: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        box-shadow: 8px 8px 14px rgba(255, 0, 183, 0.35);
     }
-    #work {
-        padding-left: 28px;
+    .file .table {
+        display: inline-block;
+        margin: auto;
+        padding: 10px 10px 0 0; 
+    }
+    .file .section {
+        text-align: center;
+    }
+    .section #work {
+        text-align: center;
+        padding: 0;
     }
 }
